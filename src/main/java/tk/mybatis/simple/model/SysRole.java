@@ -19,7 +19,7 @@ public class SysRole {
 	/**
 	 * 有效标志
 	 */
-	private String enabled;
+	private Integer enabled;
 	/**
 	 * 创建人
 	 */
@@ -37,6 +37,9 @@ public class SysRole {
 	 * 角色包含的权限列表
 	 */
 	List<SysPrivilege> privilegeList;
+
+	public SysRole() {
+	}
 
 	public List<SysPrivilege> getPrivilegeList() {
 		return privilegeList;
@@ -86,4 +89,11 @@ public class SysRole {
 		this.user = user;
 	}
 
+	public void setEnabled(Integer enabled) {
+		this.enabled = enabled;
+	}
+
+	public Integer getEnabled(){
+		return enabled;
+	}
 }

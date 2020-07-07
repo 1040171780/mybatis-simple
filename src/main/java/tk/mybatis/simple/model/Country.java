@@ -1,5 +1,8 @@
 package tk.mybatis.simple.model;
 
+/**
+ * @author ok
+ */
 public class Country {
 	private Long id;
 	private String countryname;
